@@ -1,0 +1,21 @@
+{
+  "name": "OhMyFood",
+  "version": "1.0.0",
+  "description": "Projet 3 - Dynamisez une page web avec des animations CSS",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyleglise/OhMyFood"
+  },
+  "author": "Peewaï",
+  "license": "CC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/pyleglise/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/pyleglise/OhMyFood#readme"
+}
