@@ -1,0 +1,16 @@
+.explore-bloc{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom:30px;;
+    background-color: $bg-bloc;
+    h1{
+        padding : 30px 50px 15px 50px;
+    }
+    p{
+        margin-bottom:15px;
+        font-size:15px;
+        font-weight:300;
+    }
+    
+}

@@ -1,0 +1,12 @@
+.btn-main {
+    align-self: center;
+    width:fit-content;
+    margin:10px;
+    padding:14px;
+    font-size:13px;
+    font-weight: 400;
+    color:white;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    border-radius:25px;
+    @include light-shadow;
+}

@@ -1,0 +1,15 @@
+.geoloc{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size:13px;
+    font-weight: bold;
+    color:$color-font-bloc;
+    background-color: $bg-geoloc-bloc;
+    border-top:4px solid $color-border-bloc;
+}
+
+.fa-location-dot{
+    margin:10px 15px 15px -29px;
+    font-size: 14px;
+}

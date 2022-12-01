@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  max-width: 780px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.logo--main {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.logo--small {
+  font-family: "Shrikhand", cursive;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+
+.geoloc {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 13px;
+  font-weight: bold;
+  color: #464646;
+  background-color: #EAEAEA;
+  border-top: 4px solid #DDDDDD;
+}
+
+.fa-location-dot {
+  margin: 10px 15px 15px -29px;
+  font-size: 14px;
+}
+
+.explore-bloc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: #F7F7F7;
+}
+.explore-bloc h1 {
+  padding: 30px 50px 15px 50px;
+}
+.explore-bloc p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.btn-main {
+  align-self: center;
+  width: fit-content;
+  margin: 10px;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 1px 6px 7px #DDDDDD;
+}
+
+.fonctionnement-bloc {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px 20px;
+}
+.fonctionnement-bloc ol {
+  margin: 20px 0px;
+  counter-reset: item;
+  list-style-type: none;
+}
+.fonctionnement-bloc ol li {
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #F7F7F7;
+  display: block;
+  padding: 20px 20px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 14px #DDDDDD;
+}
+.fonctionnement-bloc ol li:before {
+  display: inline-block;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  content: counter(item) "";
+  counter-increment: item;
+  color: white;
+  background-color: #9356DC;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  margin-right: 20px;
+  margin-left: -30px;
+  border-radius: 50%;
+}
+.fonctionnement-bloc ol li:hover {
+  cursor: pointer;
+  background-color: #f2eafb;
+}
+.fonctionnement-bloc ol li:hover i {
+  color: #9356DC;
+}
+.fonctionnement-bloc ol i {
+  color: #464646;
+  font-size: 15px;
+  margin-right: 16px;
+  width: 15px;
+}
+
+.main-bloc {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 35px 15px;
+  background-color: #F7F7F7;
+}
+.main-bloc .main-bloc-card {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 6px 7px #DDDDDD;
+}
+.main-bloc .main-bloc-card img {
+  width: 100%;
+  height: 135px;
+  max-height: 400px;
+  object-fit: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.main-bloc .main-bloc-card .main-bloc-card-super {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #008d75;
+  z-index: 10;
+  box-shadow: 1px 2px 4px #939393;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 25px;
+  margin: 5px 15px 0 10px;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container {
+  height: 18px;
+  align-self: flex-end;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container i {
+  font-size: 18px;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container i.fa-regular {
+  display: block;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container i.fa-solid {
+  display: none;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-regular, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-regular {
+  display: none;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-solid, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-solid {
+  display: block;
+  background-color: #9356DC;
+  background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.main-bloc .main-bloc-card p {
+  margin: 0 0 15px 10px;
+  font-size: 14px;
+}
+
+.footer-bloc {
+  background-color: #353535;
+  padding: 15px;
+  color: white;
+  font-size: 12px;
+}
+.footer-bloc i {
+  font-size: 10px;
+  width: 15px;
+}
+.footer-bloc p {
+  margin: 8px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
