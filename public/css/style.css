@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  max-width: 780px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/* #F5EDFF */
+.logo--main {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.logo--small {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 12px;
+}
+
+.geoloc {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 16px;
+  font-weight: bold;
+  color: #464646;
+  background-color: #EAEAEA;
+  border-top: 4px solid #DDDDDD;
+}
+
+.fa-location-dot {
+  margin: 10px 15px 15px -29px;
+}
+
+.explore-bloc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px 30px 20px;
+  background-color: #F7F7F7;
+}
+.explore-bloc h1 {
+  padding: 30px 45px 15px 45px;
+}
+.explore-bloc p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.btn-main {
+  align-self: center;
+  width: fit-content;
+  margin: 10px;
+  padding: 16px 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 1px 6px 7px #DDDDDD;
+}
+
+.fonctionnement-bloc {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px 20px;
+}
+.fonctionnement-bloc ol {
+  margin: 20px 0px;
+  counter-reset: item;
+  list-style-type: none;
+}
+.fonctionnement-bloc ol li {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #F7F7F7;
+  display: block;
+  padding: 20px 20px;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 14px #DDDDDD;
+}
+.fonctionnement-bloc ol li:before {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  content: counter(item) "";
+  counter-increment: item;
+  color: white;
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  line-height: 26px;
+  margin-right: 20px;
+  margin-left: -31px;
+  border-radius: 50%;
+}
+.fonctionnement-bloc ol li:hover {
+  cursor: pointer;
+  background-color: #f2eafb;
+}
+.fonctionnement-bloc ol li:hover i {
+  color: #9356DC;
+}
+.fonctionnement-bloc ol i {
+  color: #464646;
+  font-size: 17px;
+  margin-right: 18px;
+  width: 15px;
+}
+
+.main-bloc {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 35px 15px;
+  background-color: #F7F7F7;
+}
+.main-bloc .main-bloc-card {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 6px 7px #DDDDDD;
+}
+.main-bloc .main-bloc-card img {
+  width: 100%;
+  height: 185px;
+  max-height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main-bloc .main-bloc-card .main-bloc-card-super {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #008d75;
+  z-index: 10;
+  box-shadow: 1px 2px 4px #939393;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 25px;
+  margin: 5px 15px 0 10px;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container {
+  height: 18px;
+  align-self: flex-end;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container i {
+  font-size: 22px;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container i.fa-regular {
+  display: block;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container i.fa-solid {
+  display: none;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-regular, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-regular {
+  display: none;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-solid, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-solid {
+  display: block;
+  background-color: #9356DC;
+  background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.main-bloc .main-bloc-card h2 {
+  font-size: 18px;
+}
+.main-bloc .main-bloc-card p {
+  margin: 0 0 15px 10px;
+  font-size: 16px;
+}
+.main-bloc .main-bloc-card:hover, .main-bloc .main-bloc-card:active {
+  box-shadow: none;
+}
+.main-bloc a:link, .main-bloc a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-bloc {
+  background-color: #353535;
+  padding: 25px 15px;
+  color: white;
+  font-size: 15px;
+}
+.footer-bloc i {
+  font-size: 12px;
+  width: 20px;
+}
+.footer-bloc p {
+  margin: 9px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
