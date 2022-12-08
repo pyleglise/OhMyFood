@@ -1,3 +1,75 @@
+/* #F5EDFF */
+.loader-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  border-radius: 50%;
+  transform: scale(0);
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  z-index: -1;
+  animation: fadeOut 3s;
+  animation-timing-function: ease-in;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transform: scale(1);
+    height: 2300px;
+    border-radius: 0;
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transform: scale(1);
+    height: 2300px;
+    border-radius: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transform: scale(0);
+    height: 0;
+    border-radius: 50%;
+  }
+}
+.loader-container .loader {
+  position: sticky;
+  text-align: center;
+  vertical-align: middle;
+  color: #9356DC;
+  font-size: 30px;
+  top: 35%;
+  border: 8px solid #9356DC; /* Light grey */
+  border-top: 8px solid #FF79DA; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s ease-in-out infinite;
+}
+.loader-container .loader i {
+  animation: spin 1.5s linear infinite reverse;
+  margin-top: 28%;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -8,6 +80,11 @@
 
 html {
   max-width: 780px;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 body {
@@ -25,7 +102,6 @@ h2 {
   font-weight: 900;
 }
 
-/* #F5EDFF */
 .logo--main {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
@@ -83,7 +159,14 @@ h2 {
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 25px;
+  opacity: 100%;
+  cursor: pointer;
   box-shadow: 1px 6px 7px #DDDDDD;
+  transition: opacity 400ms ease-in-out, box-shadow 400ms ease-in-out;
+}
+.btn-main:hover, .btn-main:active {
+  opacity: 85%;
+  box-shadow: 1px 6px 7px #aaaaaa;
 }
 
 .fonctionnement-bloc {
@@ -183,21 +266,18 @@ h2 {
 .main-bloc .main-bloc-card .main-bloc-card-title .icon-container {
   height: 18px;
   align-self: flex-end;
+  cursor: pointer;
 }
 .main-bloc .main-bloc-card .main-bloc-card-title .icon-container i {
   font-size: 22px;
+  transition: opacity 750ms ease-in-out, width 750ms, height 750ms;
 }
 .main-bloc .main-bloc-card .main-bloc-card-title .icon-container i.fa-regular {
-  display: block;
+  opacity: 100%;
+  width: auto;
+  height: auto;
 }
 .main-bloc .main-bloc-card .main-bloc-card-title .icon-container i.fa-solid {
-  display: none;
-}
-.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-regular, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-regular {
-  display: none;
-}
-.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-solid, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-solid {
-  display: block;
   background-color: #9356DC;
   background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
   background-clip: text;
@@ -205,6 +285,19 @@ h2 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-regular, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-regular {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.main-bloc .main-bloc-card .main-bloc-card-title .icon-container:hover i.fa-solid, .main-bloc .main-bloc-card .main-bloc-card-title .icon-container:active i.fa-solid {
+  opacity: 100%;
+  height: auto;
+  width: auto;
 }
 .main-bloc .main-bloc-card h2 {
   font-size: 18px;
@@ -215,10 +308,6 @@ h2 {
 }
 .main-bloc .main-bloc-card:hover, .main-bloc .main-bloc-card:active {
   box-shadow: none;
-}
-.main-bloc a:link, .main-bloc a:visited {
-  text-decoration: none;
-  color: inherit;
 }
 
 .footer-bloc {

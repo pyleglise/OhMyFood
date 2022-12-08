@@ -23,21 +23,17 @@
 @mixin icon-container{
 	height:18px;
 	align-self: flex-end;
+	cursor: pointer;
 	i{
 		font-size:22px;
+		transition:opacity 750ms ease-in-out,width 750ms, height 750ms ;
 		&.fa-regular {
-			display:block;
+			opacity:100%;
+			width:auto;
+			height:auto;
+			
 		}
 		&.fa-solid{
-			display:none;
-		}
-	}
-	&:hover, &:active{
-		i.fa-regular {
-			display:none;
-		}
-		i.fa-solid{
-			display:block;
 			background-color:$color-primary;
 			background-image: linear-gradient(to bottom left, $color-primary,$color-secondary );
 			background-clip: text;
@@ -45,7 +41,22 @@
 			-webkit-text-fill-color: transparent; 
 			-moz-background-clip: text;
 			-moz-text-fill-color: transparent;
-			// color:$color-primary;
+			opacity:0;
+			height:0;
+			width:0;
+		}
+	}
+	&:hover, &:active{
+		i.fa-regular {
+			opacity:0;
+			height:0;
+			width:0;
+			
+		}
+		i.fa-solid{
+			opacity: 100%;
+			height:auto;
+			width:auto;
 		}
 	}
 }

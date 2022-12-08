@@ -41,6 +41,8 @@ a:link, a:visited{
 }
 
 .resto-main-bloc{
+	z-index: 1;
+  	position: relative;
 	display:flex;
 	flex-direction: column;
 	padding:30px 0px 10px 0px ;
@@ -93,9 +95,11 @@ a:link, a:visited{
 			}
 		}
 	}
-
+	
 	.resto-card{
+		overflow: hidden;
 		display: flex;
+	
 		justify-content: space-between;
 		align-items: flex-end;
 		margin: 15px 0 15px 0;
@@ -103,40 +107,59 @@ a:link, a:visited{
 		@include medium-shadow;
 		background-color: white;
 		font-size:15px ;
+		
+		h3{
+			white-space: nowrap;
+  			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 		p{
 			padding:5px 0;
+			white-space: nowrap;
+  			overflow: hidden;
+			text-overflow: ellipsis;
 			
 		}
 		.card-content{
 			padding: 10px;
-			flex-grow: 1;
-			width:70%;
+			width:80%;		
 		}
 		.card-price{
 			font-weight: 700;
 			height:100%;
 			padding:15px;
 			padding-left: 5px;
-
 		}
 		.card-tick{
 			display: none;
-			justify-content: center;
-			align-items: center;
-			color : white;
-			font-size:24px;
-			align-self: stretch;
-			width:70px;
-			margin:0;
 			background-color: $color-tertiary;
-			border-radius:0 15px 15px 0;
+			color:white;
+			margin: 0 -60px 0 0;
+			width: 60px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			align-self: stretch;
+			transition:all 0.5s;
+			i{
+				font-size:24px;
+				transform: rotate(-180deg);
+				transition:transform 0.5s ;
+			}	
 		}
+		
 		&:hover, &:active{
 			cursor: pointer;
-			.card-tick{
-				display: flex;
-				
+			.card-content{
+				width:60%;
 			}
+			.card-tick{
+				margin-right: 0;
+				i{
+					transform: rotate(360deg);
+				}
+			}
+			
 		}
 	}
 }

@@ -8,5 +8,12 @@
     color:white;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     border-radius:25px;
+	opacity:100%;
+	cursor: pointer;
     @include light-shadow;
+	transition: opacity 400ms ease-in-out, box-shadow 400ms ease-in-out;
+	&:hover, &:active{
+		opacity:85%;
+		box-shadow: 1px 6px 7px darken($color-border-bloc,20%);
+	}
 }
