@@ -1,4 +1,4 @@
-#Dynamisez une page web avec des animations CSS
+# Dynamisez une page web avec des animations CSS
 
 70 heures
 
@@ -6,7 +6,7 @@ Mis à jour le jeudi 6 octobre 2022
 
 Le nommage des livrables à déposer sur la plateforme a été changé et des indications sur les temps de soutenance ont été ajoutées le 16/03/2022.
 
-Scénario
+## Scénario
 
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
 
@@ -44,7 +44,7 @@ Pour ce projet, vous versionnez tout votre code sur Github avec des commits rég
 
 Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
 
-Livrables
+## Livrables
 
 Un fichier au format TXT contenant le lien vers votre repository GitHub ;
 
@@ -62,15 +62,15 @@ Soutenance
 
 La soutenance, d'une durée de 30 minutes,  se déroule en 3 étapes :
 
-Présentation des livrables (15 minutes) 
+### Présentation des livrables (15 minutes) 
 
 Dans un premier temps, un évaluateur jouera le rôle de Paul, votre CTO. Vous lui expliquerez vos choix techniques concernant la conception du site. (15 minutes)
 
-Discussion (10 minutes) 
+### Discussion (10 minutes) 
 
 Dans un deuxième temps, vous répondrez aux questions de Paul pendant 5 à 10 minutes.
 
-Debrief (5 minutes)
+### Debrief (5 minutes)
 
 Enfin, votre évaluateur reprendra pleinement son rôle d’évaluateur pendant 5 minutes pour que vous puissiez débriefer ensemble.
 
@@ -78,7 +78,7 @@ Votre présentation devrait durer 15 minutes (+/- 5 minutes). Puisque le respe
 
  
 
-Compétences évaluées
+## Compétences évaluées
 
 Mettre en œuvre des effets CSS graphiques avancés
 
