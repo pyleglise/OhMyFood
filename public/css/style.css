@@ -21,14 +21,9 @@ body {
   font-weight: normal;
 }
 
-h1 {
+h1, h2 {
   font-size: 24px;
   font-weight: 800;
-}
-
-h2 {
-  font-size: 15px;
-  font-weight: 900;
 }
 
 @keyframes fadeOut {
@@ -151,7 +146,7 @@ h2 {
   width: 100%;
   background-color: #F7F7F7;
 }
-.explore-bloc h1 {
+.explore-bloc h2 {
   padding: 30px 45px 15px 45px;
 }
 .explore-bloc p {
@@ -452,6 +447,7 @@ h2 {
   animation-fill-mode: both;
 }
 .resto-section h2 {
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
   padding-bottom: 8px;
@@ -608,6 +604,7 @@ h2 {
   }
   .fonctionnement-bloc {
     margin-bottom: 0;
+    width: 50%;
   }
   .fonctionnement-bloc ol {
     margin-bottom: 0;
@@ -617,7 +614,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .main-bloc h1 {
+  .main-bloc h2 {
     flex: 0 1 100%;
   }
   .main-bloc .main-bloc-card {
