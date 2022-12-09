@@ -1,0 +1,46 @@
+@media only screen and (min-width: 780px)  { 
+	/* for 10 inches tablet screens */
+	body::before {
+	  content: "Version tablette : 780x992px";
+	  @include debug-layout;
+	}
+	html{
+		max-width:992px;
+	}
+	.first-container{
+		flex-direction:row-reverse;
+		align-items: stretch;
+    
+	}
+	.explore-bloc{
+		background-color: inherit;
+		align-self:stretch;
+		justify-content:space-between;
+		width:57%;
+		p{
+			margin-bottom: 0;
+		}
+		.btn-main{
+			margin-bottom: 50px;
+		}
+	}
+	.fonctionnement-bloc{
+		margin-bottom: 0;
+	
+		ol{
+			margin-bottom: 0;
+		}
+	}
+	.main-bloc{
+		flex-direction: row;
+		flex-wrap:wrap;
+		justify-content: space-evenly;
+		h1{
+			flex:0 1 100%;
+		}
+		.main-bloc-card{
+			width:42%;
+		}
+	}
+
+}

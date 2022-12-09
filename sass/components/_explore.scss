@@ -2,7 +2,8 @@
     display:flex;
     flex-direction: column;
     text-align: center;
-    padding:0 20px 30px 20px;
+	width:100%;
+    // padding:0 40px 30px 20px;
     background-color: $bg-bloc;
     h1{
         padding : 30px 45px 15px 45px;
@@ -11,6 +12,7 @@
         margin-bottom:15px;
         font-size:18px;
         font-weight:300;
+		padding:0 20px;
     }
     
 }
