@@ -1,0 +1,90 @@
+@media only screen and (min-width: 780px)  { 
+	/* for 10 inches tablet screens */
+	// body::before {
+	//   content: "Version tablette : 780x992px";
+	// }
+	html{
+		max-width:992px;
+	}
+	.first-container{
+		flex-direction:row-reverse;
+		align-items: stretch;
+    
+	}
+	.explore-bloc{
+		background-color: inherit;
+		align-self:stretch;
+		justify-content:space-between;
+		width:57%;
+		p{
+			margin-bottom: 0;
+		}
+		.btn-main{
+			margin-bottom: 50px;
+		}
+	}
+	.fonctionnement-bloc{
+		margin-bottom: 0;
+		width:50%;
+		ol{
+			margin-bottom: 0;
+		}
+	}
+	.main-bloc{
+		flex-direction: row;
+		flex-wrap:wrap;
+		justify-content: space-evenly;
+		h2{
+			flex:0 1 100%;
+		}
+		.main-bloc-card{
+			width:42%;
+		}
+	}
+	
+	.resto-main-bloc-title{
+		justify-content: flex-end;
+		h1{
+			flex:1;
+			text-align: center;
+		}
+	}
+		
+	.resto-section{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		// width:40%;
+		h2{
+			flex:0 1 100%;
+		}
+		.resto-card{
+			width:48%;
+			.card-price{
+				height:inherit;
+			}
+		}
+	
+		
+	}
+	
+		
+	
+	.wider{
+		width:20%;
+	}
+	
+	.footer-bloc{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		h1{
+			flex:0 1 100%;
+		}
+		p{
+			margin-right: 15px;
+		}
+	}
+}
