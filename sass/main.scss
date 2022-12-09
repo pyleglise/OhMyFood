@@ -1,8 +1,9 @@
-@import "./utils/variables";
-@import "./components/loader";
 @import "./base/base";
+@import "./utils/variables";
 @import "./base/typography";
+@import "./utils/animations";
 @import "./utils/mixin";
+@import "./components/loader";
 @import "./components/logo";
 @import "./components/geoloc";
 @import "./components/explore";
@@ -10,4 +11,11 @@
 @import "./components/fonctionnement";
 @import "./components/main-bloc";
 @import "./components/footer";
-@import "./utils/animations"
+@import "./pages/restaurants.scss";
+@import "./layout/tablet";
+@import "./layout/desktop";
+
+//body::before {
+// 	content: "Version mobile : <780px";
+// 	@include debug-layout;
+//  }

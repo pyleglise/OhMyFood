@@ -1,17 +1,3 @@
-@import "../base/base";
-@import "../base/typography";
-@import "../utils/variables";
-@import "../utils/mixin";
-@import "../components/logo";
-@import "../components/btn";
-@import "../components/footer";
-@import "../utils/animations";
-
-a:link, a:visited{
-	color:black;
-	text-decoration: none;
-}
-
 .nav-back{
 	position:absolute;
 	font-size:20px;
@@ -24,16 +10,16 @@ a:link, a:visited{
 	height:260px;
 	background-size: cover;
 	&--resto-1{
-		background-image: url("../assets/img/restaurants/mini/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+		background-image: url("../img/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 	}
 	&--resto-2{
-		background-image: url("../assets/img/restaurants/mini/jay-wennington-N_Y88TWmGwA-unsplash.jpg") ;
+		background-image: url("../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg") ;
 	}
 	&--resto-3{
-		background-image: url("../assets/img/restaurants/mini/stil-u2Lp8tXIcjw-unsplash.jpg") ;
+		background-image: url("../img/stil-u2Lp8tXIcjw-unsplash.jpg") ;
 	}
 	&--resto-4{
-		background-image: url("../assets/img/restaurants/mini/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") ;
+		background-image: url("../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") ;
 	}
 	
 }
@@ -59,14 +45,15 @@ a:link, a:visited{
 	.icon-container{
 		@include icon-container;
 	}
-}		
-h1{
-	font-size: 28px;
-	font-weight: lighter;
-	&:first-letter{
-		text-transform: capitalize;
+	h1{
+		font-size: 28px;
+		font-weight: lighter;
+		&:first-letter{
+			text-transform: capitalize;
+		}
 	}
-}
+}		
+
 
 
 .resto-section{
@@ -76,6 +63,7 @@ h1{
 	animation-iteration-count: 1;
 	animation-fill-mode: both;
 	h2{
+		font-size:15px;
 		font-weight: 400;
 		text-transform: uppercase;
 		padding-bottom:8px;
@@ -134,7 +122,7 @@ h1{
 		display: none;
 		background-color: $color-tertiary;
 		color:white;
-		margin: 0 -55px 0 0;
+		margin: 0 -56px 0 0;
 		width: 55px;
 		display:flex;
 		align-items:center;
@@ -162,11 +150,11 @@ h1{
 		
 	}
 }
-.btn-main{
-	width:45%;
-}
+// .btn-main{
+// 	width:45%;
+// }
 
-@for $i from 0 to 12 {
+@for $i from 0 to 13 {
 	.delay-#{$i} {
 	  animation-delay:  #{($i/5)}s;
 	}
