@@ -1,4 +1,4 @@
-#Dynamisez une page web avec des animations CSS
+# Dynamisez une page web avec des animations CSS
 
 70 heures
 
