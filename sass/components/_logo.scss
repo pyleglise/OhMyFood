@@ -1,0 +1,14 @@
+.logo{
+    &--main{
+        @include logo-big-font;
+        text-align: center;
+        display: block;
+        margin:auto;
+        margin-top:10px;
+        // width:140px;
+    }
+	&--small{
+		@include logo-small-font;
+		margin-bottom:12px;
+	}
+}
