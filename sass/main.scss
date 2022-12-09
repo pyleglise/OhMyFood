@@ -14,3 +14,8 @@
 @import "./pages/restaurants.scss";
 @import "./layout/tablet";
 @import "./layout/desktop";
+
+//body::before {
+// 	content: "Version mobile : <780px";
+// 	@include debug-layout;
+//  }

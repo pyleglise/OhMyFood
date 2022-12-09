@@ -246,19 +246,6 @@ h2 {
   width: 15px;
 }
 
-body::before {
-  content: "Version mobile : <780px";
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
 .first-container {
   display: flex;
   flex-direction: column;
@@ -520,7 +507,7 @@ body::before {
   display: none;
   background-color: #99E2D0;
   color: white;
-  margin: 0 -55px 0 0;
+  margin: 0 -56px 0 0;
   width: 55px;
   display: flex;
   align-items: center;
@@ -600,18 +587,6 @@ body::before {
 
 @media only screen and (min-width: 780px) {
   /* for 10 inches tablet screens */
-  body::before {
-    content: "Version tablette : 780x992px";
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
   html {
     max-width: 992px;
   }
@@ -648,27 +623,67 @@ body::before {
   .main-bloc .main-bloc-card {
     width: 42%;
   }
+  .resto-main-bloc-title {
+    justify-content: flex-end;
+  }
+  .resto-main-bloc-title h1 {
+    flex: 1;
+    text-align: center;
+  }
+  .resto-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .resto-section h2 {
+    flex: 0 1 100%;
+  }
+  .resto-section .resto-card {
+    width: 48%;
+  }
+  .resto-section .resto-card .card-price {
+    height: inherit;
+  }
+  .wider {
+    width: 20%;
+  }
+  .footer-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-bloc h1 {
+    flex: 0 1 100%;
+  }
+  .footer-bloc p {
+    margin-right: 15px;
+  }
 }
 @media only screen and (min-width: 992px) {
   /* for 10 inches tablet screens */
-  body::before {
-    content: "Version desktop : >992px";
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
   html {
     max-width: 1400px;
     margin: 0 auto;
   }
   .main-bloc .main-bloc-card {
     width: 20%;
+  }
+  .resto-main-bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .resto-main-bloc .resto-main-bloc-title {
+    flex: 0 1 100%;
+  }
+  .resto-main-bloc .resto-section {
+    display: block;
+    width: 30%;
+  }
+  .resto-main-bloc .resto-card {
+    width: unset;
   }
 }
 

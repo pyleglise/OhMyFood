@@ -1,7 +1,3 @@
-body::before {
-	content: "Version mobile : <780px";
-	@include debug-layout;
- }
 .first-container{
 	display:flex;
 	flex-direction: column;

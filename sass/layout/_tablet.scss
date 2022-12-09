@@ -1,9 +1,8 @@
 @media only screen and (min-width: 780px)  { 
 	/* for 10 inches tablet screens */
-	body::before {
-	  content: "Version tablette : 780x992px";
-	  @include debug-layout;
-	}
+	// body::before {
+	//   content: "Version tablette : 780x992px";
+	// }
 	html{
 		max-width:992px;
 	}
@@ -42,5 +41,50 @@
 			width:42%;
 		}
 	}
-
+	
+	.resto-main-bloc-title{
+		justify-content: flex-end;
+		h1{
+			flex:1;
+			text-align: center;
+		}
+	}
+		
+	.resto-section{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		// width:40%;
+		h2{
+			flex:0 1 100%;
+		}
+		.resto-card{
+			width:48%;
+			.card-price{
+				height:inherit;
+			}
+		}
+	
+		
+	}
+	
+		
+	
+	.wider{
+		width:20%;
+	}
+	
+	.footer-bloc{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		h1{
+			flex:0 1 100%;
+		}
+		p{
+			margin-right: 15px;
+		}
+	}
 }
