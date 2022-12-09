@@ -5,7 +5,6 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
-	"sass2": "sass --watch ./sass/pages/restaurants.scss:./public/css/style-restaurant.css --style expanded",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
