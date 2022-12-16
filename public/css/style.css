@@ -349,6 +349,9 @@ h1, h2 {
 .footer-bloc p {
   margin: 9px 0;
 }
+.footer-bloc p a:link, .footer-bloc p a:visited {
+  color: white;
+}
 
 .nav-back {
   position: absolute;
